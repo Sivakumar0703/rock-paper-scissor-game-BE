@@ -5,11 +5,7 @@ dotenv.config();
 const { Client } = pg
 
 const client = new Client({
-  host: process.env.HOST,
-  user: process.env.USER_NAME,
-  password:process.env.DB_PASSWORD,
-  port:process.env.PORT || 5432,
-  database:process.env.DB_NAME,
+  connectionString:process.env.DB_CONNECTION_URL
 })
 
 client.connect((error) => {
