@@ -1,6 +1,4 @@
-
 import client from "../Database/DbConfig.js";
-// import pool from "../Database/DbConfig.js";
 
 // get all gamers data
 export const getAllData = async(req,res) => {
