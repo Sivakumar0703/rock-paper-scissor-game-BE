@@ -109,10 +109,6 @@ const socketIO = new Server(server , {
         } else {
          socket.emit('room-full');
         }
-        // socket.join(room); // the other player joins the room.where the creator is already waiting (code)
-        // let msg = `${payload.playerName} Joined`;
-        // socket.to(room).emit("playersReady", msg , playersName.player2,room); // send to the player1
-        // socket.emit("getOpponentName" , playersName.player1,room); 
     } else {
         console.log("no joining code")
     }

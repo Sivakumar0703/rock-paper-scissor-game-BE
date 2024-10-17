@@ -9,7 +9,8 @@ const client = new Client({
   user: process.env.USER_NAME,
   password:process.env.DB_PASSWORD,
   port:process.env.PORT,
-  database:process.env.DB_NAME 
+  database:process.env.DB_NAME,
+  ssl:true
 })
 
 client.connect((error) => {
